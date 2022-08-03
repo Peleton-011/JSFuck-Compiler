@@ -1,0 +1,19 @@
+bool true => !![]
+bool false => ![]
+
+int 0 => +[]
+single digit ints => +!![]  as many times as the number
+
+number strings => [n1] + [n2] etc...
+
+large numbers => +[digit3] + [digit2] + [digit1]  or however many
+
+undefined => [][[]]
+
+function flat() { => []["flat"]+[]  ||  [][(![]+[])[+[]]+(![]+[])[+!![]+!![]]+(![]+[])[+!![]]+(!![]+[])[+[]]]+[]
+[object Array Iterator] => []["entries"]()+[]  ||  [][(!![]+[])[+!![]+!![]+!![]]+([][[]]+[])[+!![]]+(!![]+[])[+[]]+(!![]+[])[+!![]]+([][[]]+[])[+!![]+!![]+!![]+!![]+!![]]+(!![]+[])[+!![]+!![]+!![]]+(![]+[])[+!![]+!![]+!![]]]()+[]
+
+(t,r,u,e,f,a,l,s) => true/false
+(u,n,d,i) => undefined
+(c,o, ,(,),{) => function flat() {
+(b,j,A,y,I,[,]) => [object Array Iterator]
